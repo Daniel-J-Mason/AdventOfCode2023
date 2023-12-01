@@ -8,18 +8,20 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PartOneTest {
+class PartTwoTest {
+    
     List<String> calibrationValues;
     
     @BeforeEach
     void setUp(){
         FileParser fileParser = new FileParser();
-        calibrationValues = fileParser.toStringArray("01_DayOne_PartOne_Test.txt");
+        calibrationValues = fileParser.toStringArray("01_DayOne_PartTwo_Test.txt");
     }
     
     @Test
     void CorrectSumTest(){
-        Integer actual = PartOne.sumOfAll(calibrationValues);
-        assertEquals(142, actual);
+        Integer actual = PartTwo.sumOfAll(calibrationValues);
+        assertEquals(281, actual);
     }
+
 }
