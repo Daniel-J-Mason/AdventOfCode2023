@@ -1,4 +1,4 @@
-package com.allthing.daythree;
+package com.allthing.day03;
 
 import java.util.ArrayList;
 import java.util.HashSet;

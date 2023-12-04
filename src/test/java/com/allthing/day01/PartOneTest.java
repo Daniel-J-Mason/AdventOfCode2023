@@ -1,4 +1,4 @@
-package com.allthing.daytwo;
+package com.allthing.day01;
 
 import com.allthing.parser.FileParser;
 import org.junit.jupiter.api.BeforeEach;
@@ -9,18 +9,17 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PartOneTest {
-    
-    List<String> gameValues;
+    List<String> calibrationValues;
     
     @BeforeEach
     void setUp(){
         FileParser fileParser = new FileParser();
-        gameValues = fileParser.toStringArray("02_DayTwo_PartOne_Test.txt");
+        calibrationValues = fileParser.toStringArray("01_DayOne_PartOne_Test.txt");
     }
     
     @Test
-    void totalParseTest(){
-        assertEquals(8, PartOne.sumOfValidGameIds(gameValues));
+    void CorrectSumTest(){
+        Integer actual = PartOne.sumOfAll(calibrationValues);
+        assertEquals(142, actual);
     }
-
 }

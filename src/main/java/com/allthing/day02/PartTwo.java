@@ -1,4 +1,4 @@
-package com.allthing.daytwo;
+package com.allthing.day02;
 
 import com.allthing.parser.FileParser;
 
@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class PartOne {
+public class PartTwo {
     public static void main(String[] args) {
         FileParser fileParser = new FileParser();
         
@@ -36,11 +36,7 @@ public class PartOne {
         
         System.out.println(game);
         
-        if (game.isValidGame(12, 13, 14)){
-            return game.getId();
-        } else {
-            return 0;
-        }
+        return game.getPower();
     }
     
     private static int getGameId(String line){

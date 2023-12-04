@@ -1,4 +1,4 @@
-package com.allthing.dayone;
+package com.allthing.day01;
 
 public enum NumberWord {
     ONE("one", 1),

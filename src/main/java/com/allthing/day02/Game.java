@@ -1,4 +1,4 @@
-package com.allthing.daytwo;
+package com.allthing.day02;
 
 public class Game {
     private final int id;

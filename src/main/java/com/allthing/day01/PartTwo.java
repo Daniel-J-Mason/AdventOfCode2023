@@ -1,4 +1,4 @@
-package com.allthing.dayone;
+package com.allthing.day01;
 
 import com.allthing.parser.FileParser;
 

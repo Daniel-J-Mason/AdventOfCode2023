@@ -1,4 +1,4 @@
-package com.allthing.daytwo;
+package com.allthing.day02;
 
 import com.allthing.parser.FileParser;
 import org.junit.jupiter.api.BeforeEach;
