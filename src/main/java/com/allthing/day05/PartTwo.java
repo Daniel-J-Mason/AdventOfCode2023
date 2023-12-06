@@ -95,7 +95,7 @@ public class PartTwo {
             }
             long delta = singleAlmanacStep.get(filterRange);
             
-            if (filterRange.fullyContains(seed)) { // if a range encapsulates the full range, translate and output
+            if (filterRange.fullyContains(seed)) { // if a filter encapsulates the full seed, translate and output
                 seed.translateRange(delta);
                 outputs.offer(seed);
             } else if (seed.fullyContains(filterRange)) { // if a seed fully encapsulates the range, split off ends to re-check and translate filter to output
