@@ -1,4 +1,4 @@
-package com.allthing.day09.day08;
+package com.allthing.day09;
 
 import com.allthing.day09.PartOne;
 import com.allthing.parser.FileParser;
