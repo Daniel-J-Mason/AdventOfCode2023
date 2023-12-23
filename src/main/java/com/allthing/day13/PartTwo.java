@@ -9,7 +9,7 @@ public class PartTwo {
     public static void main(String[] args) {
         FileParser fileParser = new FileParser();
         
-        List<String> lines = fileParser.toStringArray("13_DayThirteen_PartOne.txt");
+        List<String> lines = fileParser.toStringArray("13_DayThirteen_PartTwo.txt");
         
         System.out.println(sumOfGridValues(lines));
         
