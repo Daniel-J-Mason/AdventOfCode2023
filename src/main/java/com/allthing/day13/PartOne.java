@@ -12,8 +12,6 @@ public class PartOne {
         List<String> lines = fileParser.toStringArray("13_DayThirteen_PartOne.txt");
         
         System.out.println(sumOfGridValues(lines));
-        
-        
     }
     
     public static int sumOfGridValues(List<String> lines){
