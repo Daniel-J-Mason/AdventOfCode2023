@@ -15,8 +15,14 @@ public class FileParser {
         return readFileAsString(filename).toCharArray();
     }
     
+    //Left for backwards compatibility
     public List<String> toStringArray(String filename) {
         String[] lines = readFileAsString(filename).split("\n");
+        return new ArrayList<>(List.of(lines));
+    }
+    
+    public List<String> toStringArray(String filename, String separator) {
+        String[] lines = readFileAsString(filename).split(separator);
         return new ArrayList<>(List.of(lines));
     }
     
